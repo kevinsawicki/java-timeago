@@ -25,6 +25,14 @@ import java.text.MessageFormat;
 import java.util.Date;
 
 /**
+ * 
+ * Time ago class that converts long millisecond and {@link Date} objects to
+ * time ago/from now {@link String} objects.
+ * 
+ * This class uses the messages from {@link Messages} by default but those can
+ * be changed after creation through one of the setter methods for a specified
+ * time string.
+ * 
  * @author Kevin Sawicki (kevin@github.com)
  */
 public class TimeAgo {
