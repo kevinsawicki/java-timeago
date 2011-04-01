@@ -12,7 +12,8 @@ To build and run the included unit tests:
 Usage
 =====
     TimeAgo time = new TimeAgo();
-    String minutes = time.timeAgo(System.currentTimeMillis() - (15*60*1000)); // returns "15 minutes ago"
+    String minutes = time.timeAgo(System.currentTimeMillis() - (15*60*1000));       // returns "15 minutes ago"
+    String minutes = time.timeUntil(System.currentTimeMillis() - (6*60*60*1000));   // returns "6 hours ago"
 Contribution
 =====
 If you would like to contribute locale-specific properties files please fork this repository and open a pull request.
