@@ -2,6 +2,13 @@ Java timeago library
 =====
 This is a Java port of the [jquery-timeago](https://github.com/rmm5t/jquery-timeago) plug-in.
 
+Building
+====
+The org.github.timeago project contains a [Maven](http://maven.apache.org/) pom.xml file that builds a jar containing the TimeAgo class.
+
+To build and run the includes unit tests:
+    $ mvn clean install
+
 Usage
 =====
     TimeAgo time = new TimeAgo();
