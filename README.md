@@ -6,7 +6,7 @@ Building
 ====
 The org.github.timeago project contains a [Maven](http://maven.apache.org/) pom.xml file that builds a jar containing the TimeAgo class.
 
-To build and run the includes unit tests:
+To build and run the included unit tests:
     $ mvn clean install
 
 Usage
