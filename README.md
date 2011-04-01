@@ -4,4 +4,4 @@ This is a Java port of the [jquery-timeago](https://github.com/rmm5t/jquery-time
 
 Other
 =====
-[BSD License](http://www.opensource.org/licenses/bsd-license.php)
+[MIT License](http://www.opensource.org/licenses/mit-license.html)
