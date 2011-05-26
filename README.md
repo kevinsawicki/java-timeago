@@ -7,7 +7,8 @@ This is a Java port of the [jquery-timeago](https://github.com/rmm5t/jquery-time
 The org.github.timeago project contains a [Maven](http://maven.apache.org/) pom.xml file that builds a jar containing the TimeAgo class.
 
 To build and run the included unit tests:
-    $ mvn clean install
+
+```$ mvn clean install```
 
 ##Usage
 
