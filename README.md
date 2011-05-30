@@ -14,8 +14,9 @@ To build and run the included unit tests:
 
 ```java
 TimeAgo time = new TimeAgo();
-String minutes = time.timeAgo(System.currentTimeMillis() - (15*60*1000));       // returns "15 minutes ago"
-String hours = time.timeUntil(System.currentTimeMillis() - (6*60*60*1000));     // returns "6 hours ago"
+long current = System.currentTimeMillis();
+String minutes = time.timeAgo(current - (15 * 60 * 1000));	// returns "15 minutes ago"
+String hours = time.timeUntil(current - (6 * 60 * 60 * 1000));	// returns "6 hours from now"
 ```
 
 ##Contribution

@@ -121,29 +121,28 @@ public class TimeAgo {
 		double days = hours / 24;
 		double years = days / 365;
 
-		if (seconds < 45) {
+		if (seconds < 45)
 			time = this.seconds;
-		} else if (seconds < 90) {
+		else if (seconds < 90)
 			time = this.minute;
-		} else if (minutes < 45) {
+		else if (minutes < 45)
 			time = MessageFormat.format(this.minutes, Math.round(minutes));
-		} else if (minutes < 90) {
+		else if (minutes < 90)
 			time = this.hour;
-		} else if (hours < 24) {
+		else if (hours < 24)
 			time = MessageFormat.format(this.hours, Math.round(hours));
-		} else if (hours < 48) {
+		else if (hours < 48)
 			time = this.day;
-		} else if (days < 30) {
+		else if (days < 30)
 			time = MessageFormat.format(this.days, Math.floor(days));
-		} else if (days < 60) {
+		else if (days < 60)
 			time = this.month;
-		} else if (days < 365) {
+		else if (days < 365)
 			time = MessageFormat.format(this.months, Math.floor(days / 30));
-		} else if (years < 2) {
+		else if (years < 2)
 			time = this.year;
-		} else {
+		else
 			time = MessageFormat.format(this.years, Math.floor(years));
-		}
 
 		return join(prefix, time, suffix);
 	}
@@ -159,13 +158,11 @@ public class TimeAgo {
 	 */
 	public String join(String prefix, String time, String suffix) {
 		StringBuilder joined = new StringBuilder();
-		if (prefix != null && prefix.length() > 0) {
+		if (prefix != null && prefix.length() > 0)
 			joined.append(prefix).append(' ');
-		}
 		joined.append(time);
-		if (suffix != null && suffix.length() > 0) {
+		if (suffix != null && suffix.length() > 0)
 			joined.append(' ').append(suffix);
-		}
 		return joined.toString();
 	}
 
