@@ -170,7 +170,7 @@ public class TimeAgo {
 	 * @return prefixAgo
 	 */
 	public String getPrefixAgo() {
-		return this.prefixAgo;
+		return prefixAgo;
 	}
 
 	/**
@@ -185,7 +185,7 @@ public class TimeAgo {
 	 * @return prefixFromNow
 	 */
 	public String getPrefixFromNow() {
-		return this.prefixFromNow;
+		return prefixFromNow;
 	}
 
 	/**
@@ -200,7 +200,7 @@ public class TimeAgo {
 	 * @return suffixAgo
 	 */
 	public String getSuffixAgo() {
-		return this.suffixAgo;
+		return suffixAgo;
 	}
 
 	/**
@@ -215,7 +215,7 @@ public class TimeAgo {
 	 * @return suffixFromNow
 	 */
 	public String getSuffixFromNow() {
-		return this.suffixFromNow;
+		return suffixFromNow;
 	}
 
 	/**
@@ -230,7 +230,7 @@ public class TimeAgo {
 	 * @return seconds
 	 */
 	public String getSeconds() {
-		return this.seconds;
+		return seconds;
 	}
 
 	/**
@@ -245,7 +245,7 @@ public class TimeAgo {
 	 * @return minute
 	 */
 	public String getMinute() {
-		return this.minute;
+		return minute;
 	}
 
 	/**
@@ -260,7 +260,7 @@ public class TimeAgo {
 	 * @return minutes
 	 */
 	public String getMinutes() {
-		return this.minutes;
+		return minutes;
 	}
 
 	/**
@@ -275,7 +275,7 @@ public class TimeAgo {
 	 * @return hour
 	 */
 	public String getHour() {
-		return this.hour;
+		return hour;
 	}
 
 	/**
@@ -290,7 +290,7 @@ public class TimeAgo {
 	 * @return hours
 	 */
 	public String getHours() {
-		return this.hours;
+		return hours;
 	}
 
 	/**
@@ -305,7 +305,7 @@ public class TimeAgo {
 	 * @return day
 	 */
 	public String getDay() {
-		return this.day;
+		return day;
 	}
 
 	/**
@@ -320,7 +320,7 @@ public class TimeAgo {
 	 * @return days
 	 */
 	public String getDays() {
-		return this.days;
+		return days;
 	}
 
 	/**
@@ -335,7 +335,7 @@ public class TimeAgo {
 	 * @return month
 	 */
 	public String getMonth() {
-		return this.month;
+		return month;
 	}
 
 	/**
@@ -350,7 +350,7 @@ public class TimeAgo {
 	 * @return months
 	 */
 	public String getMonths() {
-		return this.months;
+		return months;
 	}
 
 	/**
@@ -365,7 +365,7 @@ public class TimeAgo {
 	 * @return year
 	 */
 	public String getYear() {
-		return this.year;
+		return year;
 	}
 
 	/**
@@ -380,7 +380,7 @@ public class TimeAgo {
 	 * @return years
 	 */
 	public String getYears() {
-		return this.years;
+		return years;
 	}
 
 	/**
