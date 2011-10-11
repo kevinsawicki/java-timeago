@@ -28,7 +28,7 @@ import java.text.MessageFormat;
 import junit.framework.TestCase;
 
 /**
- * 
+ *
  * Unit tests of {@link TimeAgo}
  */
 public class TimeAgoTest extends TestCase {
@@ -198,5 +198,4 @@ public class TimeAgoTest extends TestCase {
 						ago.getSuffixAgo());
 		assertEquals(expected, time);
 	}
-
 }

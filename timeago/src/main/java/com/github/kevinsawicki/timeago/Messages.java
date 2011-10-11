@@ -39,7 +39,7 @@ public class Messages {
 
 	/**
 	 * Get string for key
-	 * 
+	 *
 	 * @param key
 	 * @return string
 	 */
