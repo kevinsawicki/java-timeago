@@ -28,7 +28,7 @@ import java.util.Date;
  *
  * Time ago class that converts long millisecond and {@link Date} objects to
  * time ago/from now {@link String} objects.
- *
+ * <p>
  * This class uses the messages from {@link Messages} by default but those can
  * be changed after creation through one of the setter methods for a specified
  * time string.
@@ -36,20 +36,34 @@ import java.util.Date;
 public class TimeAgo {
 
 	private String prefixAgo = null;
+
 	private String prefixFromNow = null;
-	private String suffixAgo = Messages.getString("TimeAgo.AGO"); //$NON-NLS-1$;
+
+	private String suffixAgo = Messages.getString("TimeAgo.AGO"); //$NON-NLS-1$
+
 	private String suffixFromNow = Messages
-			.getString("TimeAgo.SUFFIX_FROM_NOW"); //$NON-NLS-1$;
+			.getString("TimeAgo.SUFFIX_FROM_NOW"); //$NON-NLS-1$
+
 	private String seconds = Messages.getString("TimeAgo.SECONDS"); //$NON-NLS-1$
+
 	private String minute = Messages.getString("TimeAgo.MINUTE"); //$NON-NLS-1$
+
 	private String minutes = Messages.getString("TimeAgo.MINUTES"); //$NON-NLS-1$
-	private String hour = Messages.getString("TimeAgo.HOUR"); //$NON-NLS-1$;
-	private String hours = Messages.getString("TimeAgo.HOURS"); //$NON-NLS-1$;
+
+	private String hour = Messages.getString("TimeAgo.HOUR"); //$NON-NLS-1$
+
+	private String hours = Messages.getString("TimeAgo.HOURS"); //$NON-NLS-1$
+
 	private String day = Messages.getString("TimeAgo.DAY"); //$NON-NLS-1$
+
 	private String days = Messages.getString("TimeAgo.DAYS"); //$NON-NLS-1$
+
 	private String month = Messages.getString("TimeAgo.MONTH"); //$NON-NLS-1$
+
 	private String months = Messages.getString("TimeAgo.MONTH"); //$NON-NLS-1$
+
 	private String year = Messages.getString("TimeAgo.YEAR"); //$NON-NLS-1$
+
 	private String years = Messages.getString("TimeAgo.YEARS"); //$NON-NLS-1$
 
 	/**
