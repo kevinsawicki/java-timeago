@@ -19,6 +19,18 @@ String minutes = time.timeAgo(current - (15 * 60 * 1000));	// returns "15 minute
 String hours = time.timeUntil(current - (6 * 60 * 60 * 1000));	// returns "6 hours from now"
 ```
 
+### Maven
+
+This library is available from [Maven Central](http://search.maven.org/#search%7Cga%7C1%7C%20a%3A%22timeago%22%20g%3A%22com.github.kevinsawicki%22).
+
+```xml
+<dependency>
+  <groupId>com.github.kevinsawicki</groupId>
+  <artifactId>timeago</artifactId>
+  <version>1.0.0</version>
+</dependency>
+```
+
 ##Contribution
 
 If you would like to contribute locale-specific properties files please fork this repository and open a pull request.
