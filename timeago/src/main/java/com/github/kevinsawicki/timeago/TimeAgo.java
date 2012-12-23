@@ -60,7 +60,7 @@ public class TimeAgo {
 
 	private String month = Messages.getString("TimeAgo.MONTH"); //$NON-NLS-1$
 
-	private String months = Messages.getString("TimeAgo.MONTH"); //$NON-NLS-1$
+	private String months = Messages.getString("TimeAgo.MONTHS"); //$NON-NLS-1$
 
 	private String year = Messages.getString("TimeAgo.YEAR"); //$NON-NLS-1$
 
