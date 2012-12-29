@@ -10,7 +10,7 @@
 
 	<groupId>com.github.kevinsawicki</groupId>
 	<artifactId>timeago</artifactId>
-	<version>1.0.1</version>
+	<version>1.0.2-SNAPSHOT</version>
 
 	<name>Time Ago</name>
 	<description>Simple Java library for converting dates to time ago strings.</description>
