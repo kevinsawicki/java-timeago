@@ -27,7 +27,7 @@ This library is available from [Maven Central](http://search.maven.org/#search%7
 <dependency>
   <groupId>com.github.kevinsawicki</groupId>
   <artifactId>timeago</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
 </dependency>
 ```
 
