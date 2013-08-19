@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>java-timeago by kevinsawicki</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+
+      <header>
+        <h1>java-timeago</h1>
+        <p>Java timeago library</p>
+      </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+
+        <a href="https://github.com/kevinsawicki/java-timeago" class="button fork"><strong>View On GitHub</strong></a>
+        <div class="downloads">
+          <span>Downloads:</span>
+          <ul>
+            <li><a href="https://github.com/kevinsawicki/java-timeago/zipball/master" class="button">ZIP</a></li>
+            <li><a href="https://github.com/kevinsawicki/java-timeago/tarball/master" class="button">TAR</a></li>
+          </ul>
+        </div>
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section>
+        <h1>
+<a name="java-timeago-library" class="anchor" href="#java-timeago-library"><span class="octicon octicon-link"></span></a>Java timeago library</h1>
+
+<p>This is a Java port of the <a href="https://github.com/rmm5t/jquery-timeago">jquery-timeago</a> plug-in.  Please visit the <a href="http://rmm5t.github.com/jquery-timeago/">jquery-timeago</a> project page to read more about fuzzy timestamps.</p>
+
+<h2>
+<a name="building" class="anchor" href="#building"><span class="octicon octicon-link"></span></a>Building</h2>
+
+<p>The timeago project contains a <a href="http://maven.apache.org/">Maven</a> pom.xml file that builds a jar containing the TimeAgo class.</p>
+
+<p>To build and run the included unit tests:</p>
+
+<p><code>$ mvn clean install</code></p>
+
+<h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<div class="highlight"><pre><span class="n">TimeAgo</span> <span class="n">time</span> <span class="o">=</span> <span class="k">new</span> <span class="n">TimeAgo</span><span class="o">();</span>
+<span class="kt">long</span> <span class="n">current</span> <span class="o">=</span> <span class="n">System</span><span class="o">.</span><span class="na">currentTimeMillis</span><span class="o">();</span>
+<span class="n">String</span> <span class="n">minutes</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="na">timeAgo</span><span class="o">(</span><span class="n">current</span> <span class="o">-</span> <span class="o">(</span><span class="mi">15</span> <span class="o">*</span> <span class="mi">60</span> <span class="o">*</span> <span class="mi">1000</span><span class="o">));</span>  <span class="c1">// returns "15 minutes ago"</span>
+<span class="n">String</span> <span class="n">hours</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="na">timeUntil</span><span class="o">(</span><span class="n">current</span> <span class="o">-</span> <span class="o">(</span><span class="mi">6</span> <span class="o">*</span> <span class="mi">60</span> <span class="o">*</span> <span class="mi">60</span> <span class="o">*</span> <span class="mi">1000</span><span class="o">));</span>  <span class="c1">// returns "6 hours from now"</span>
+</pre></div>
+
+<h3>
+<a name="maven" class="anchor" href="#maven"><span class="octicon octicon-link"></span></a>Maven</h3>
+
+<p>This library is available from <a href="http://search.maven.org/#search%7Cga%7C1%7C%20a%3A%22timeago%22%20g%3A%22com.github.kevinsawicki%22">Maven Central</a>.</p>
+
+<div class="highlight"><pre><span class="nt">&lt;dependency&gt;</span>
+  <span class="nt">&lt;groupId&gt;</span>com.github.kevinsawicki<span class="nt">&lt;/groupId&gt;</span>
+  <span class="nt">&lt;artifactId&gt;</span>timeago<span class="nt">&lt;/artifactId&gt;</span>
+  <span class="nt">&lt;version&gt;</span>1.0.1<span class="nt">&lt;/version&gt;</span>
+<span class="nt">&lt;/dependency&gt;</span>
+</pre></div>
+
+<h2>
+<a name="contribution" class="anchor" href="#contribution"><span class="octicon octicon-link"></span></a>Contribution</h2>
+
+<p>If you would like to contribute locale-specific properties files please fork this repository and open a pull request.</p>
+
+<h2>
+<a name="other" class="anchor" href="#other"><span class="octicon octicon-link"></span></a>Other</h2>
+
+<p><a href="http://www.opensource.org/licenses/mit-license.html">MIT License</a></p>
+      </section>
+      <footer>
+        <p>Project maintained by <a href="https://github.com/kevinsawicki">kevinsawicki</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
