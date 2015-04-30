@@ -3,7 +3,7 @@
 This is a Java port of the [jquery-timeago](https://github.com/rmm5t/jquery-timeago) plug-in.  Please visit the [jquery-timeago](http://rmm5t.github.com/jquery-timeago/) project page to read more about fuzzy timestamps.
 
 ##Importing the library
-Use Jitpack.io ([check here](https://jitpack.io/#Kinnonii/java-timeago/timeago-1.1.0)
+Use Jitpack.io ([check here](https://jitpack.io/#Kinnonii/java-timeago/timeago-1.1.0))
 
 ##Usage
 
