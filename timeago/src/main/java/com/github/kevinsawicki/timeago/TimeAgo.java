@@ -35,36 +35,21 @@ import java.util.Date;
  */
 public class TimeAgo {
 
-	private String prefixAgo = null;
-
-	private String prefixFromNow = null;
-
-	private String suffixAgo = Messages.getString("TimeAgo.AGO"); //$NON-NLS-1$
-
-	private String suffixFromNow = Messages
-			.getString("TimeAgo.SUFFIX_FROM_NOW"); //$NON-NLS-1$
-
-	private String seconds = Messages.getString("TimeAgo.SECONDS"); //$NON-NLS-1$
-
-	private String minute = Messages.getString("TimeAgo.MINUTE"); //$NON-NLS-1$
-
-	private String minutes = Messages.getString("TimeAgo.MINUTES"); //$NON-NLS-1$
-
-	private String hour = Messages.getString("TimeAgo.HOUR"); //$NON-NLS-1$
-
-	private String hours = Messages.getString("TimeAgo.HOURS"); //$NON-NLS-1$
-
-	private String day = Messages.getString("TimeAgo.DAY"); //$NON-NLS-1$
-
-	private String days = Messages.getString("TimeAgo.DAYS"); //$NON-NLS-1$
-
-	private String month = Messages.getString("TimeAgo.MONTH"); //$NON-NLS-1$
-
-	private String months = Messages.getString("TimeAgo.MONTHS"); //$NON-NLS-1$
-
-	private String year = Messages.getString("TimeAgo.YEAR"); //$NON-NLS-1$
-
-	private String years = Messages.getString("TimeAgo.YEARS"); //$NON-NLS-1$
+	private String prefixAgo;
+	private String prefixFromNow;
+	private String suffixAgo;
+	private String suffixFromNow;
+	private String seconds;
+	private String minute;
+	private String minutes;
+	private String hour;
+	private String hours;
+	private String day;
+	private String days;
+	private String month;
+	private String months;
+	private String year;
+	private String years;
 
 	public TimeAgo(String locale){
 		
