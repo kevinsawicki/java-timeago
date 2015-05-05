@@ -2,13 +2,18 @@
 
 This is a Java port of the [jquery-timeago](https://github.com/rmm5t/jquery-timeago) plug-in.  Please visit the [jquery-timeago](http://rmm5t.github.com/jquery-timeago/) project page to read more about fuzzy timestamps.
 
+It supports English, Spanish and Italian at the time.
+
 ##Importing the library
-Use Jitpack.io ([check here](https://jitpack.io/#Kinnonii/java-timeago/timeago-1.1.0))
+Use Jitpack.io ([check here](https://jitpack.io/#Kinnonii/java-timeago/timeago-1.1.3))
 
 ##Usage
 
 ```java
-TimeAgo time = new TimeAgo('en'); //For English text. 
+TimeAgo time = new TimeAgo('en'); //For English text.
+//TimeAgo time = new TimeAgo('it'); //For Italian text.
+//TimeAgo time = new TimeAgo('es'); //For Spanish text.
+
 
 long current = System.currentTimeMillis();
 String minutes = time.timeAgo(current - (15 * 60 * 1000));	// returns "15 minutes ago"
