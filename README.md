@@ -8,7 +8,7 @@ Use Jitpack.io ([check here](https://jitpack.io/#Kinnonii/java-timeago/timeago-1
 ##Usage
 
 ```java
-TimeAgo time = new TimeAgo('en'); //For English text OR TimeAgo time = new TimeAgo('es') for Spanish text
+TimeAgo time = new TimeAgo('en'); //For English text. 
 
 long current = System.currentTimeMillis();
 String minutes = time.timeAgo(current - (15 * 60 * 1000));	// returns "15 minutes ago"
