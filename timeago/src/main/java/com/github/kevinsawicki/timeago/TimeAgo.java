@@ -52,52 +52,36 @@ public class TimeAgo {
 	private String years;
 
 	public TimeAgo(String locale){
-		
+
 		if(locale.equals("en")){
-			initEnglish();
+			initLanguage("EN");
 		}else if(locale.equals("es")){
-			initSpanish();
+			initLanguage("ES");
+		}else if(locale.equals("it")){
+			initLanguage("IT");
 		}else{
 			throw new IllegalArgumentException("Locale must be equals tu 'es' or 'en'.");
 		}
 	}
-	
-	private void initEnglish(){
-		prefixAgo = null;
-		prefixFromNow = null;
-		suffixAgo = Messages.getString("TimeAgo.AGO"); //$NON-NLS-1$
-		suffixFromNow = Messages
-			.getString("TimeAgo.SUFFIX_FROM_NOW"); //$NON-NLS-1$
-		seconds = Messages.getString("TimeAgo.SECONDS"); //$NON-NLS-1$
-		minute = Messages.getString("TimeAgo.MINUTE"); //$NON-NLS-1$
-		minutes = Messages.getString("TimeAgo.MINUTES"); //$NON-NLS-1$
-		hour = Messages.getString("TimeAgo.HOUR"); //$NON-NLS-1$
-		hours = Messages.getString("TimeAgo.HOURS"); //$NON-NLS-1$
-		day = Messages.getString("TimeAgo.DAY"); //$NON-NLS-1$
-		days = Messages.getString("TimeAgo.DAYS"); //$NON-NLS-1$
-		month = Messages.getString("TimeAgo.MONTH"); //$NON-NLS-1$
-		months = Messages.getString("TimeAgo.MONTHS"); //$NON-NLS-1$
-		year = Messages.getString("TimeAgo.YEAR"); //$NON-NLS-1$
-		years = Messages.getString("TimeAgo.YEARS"); //$NON-NLS-1$
+
+	private void initLanguage(String language) {
+		prefixAgo = Messages.getString("TimeAgo.PREFIX_AGO" + "_" + language); //$NON-NLS-1$
+		suffixAgo = Messages.getString("TimeAgo.SUFFIX_AGO" + "_" + language); //$NON-NLS-1$
+		prefixFromNow = Messages.getString("TimeAgo.PREFIX_FROM_NOW" + "_" + language); //$NON-NLS-1$
+		suffixFromNow = Messages.getString("TimeAgo.SUFFIX_FROM_NOW" + "_" + language); //$NON-NLS-1$
+		seconds = Messages.getString("TimeAgo.SECONDS" + "_" + language); //$NON-NLS-1$
+		minute = Messages.getString("TimeAgo.MINUTE" + "_" + language); //$NON-NLS-1$
+		minutes = Messages.getString("TimeAgo.MINUTES" + "_" + language); //$NON-NLS-1$
+		hour = Messages.getString("TimeAgo.HOUR" + "_" + language); //$NON-NLS-1$
+		hours = Messages.getString("TimeAgo.HOURS" + "_" + language); //$NON-NLS-1$
+		day = Messages.getString("TimeAgo.DAY" + "_" + language); //$NON-NLS-1$
+		days = Messages.getString("TimeAgo.DAYS" + "_" + language); //$NON-NLS-1$
+		month = Messages.getString("TimeAgo.MONTH" + "_" + language); //$NON-NLS-1$
+		months = Messages.getString("TimeAgo.MONTHS" + "_" + language); //$NON-NLS-1$
+		year = Messages.getString("TimeAgo.YEAR" + "_" + language); //$NON-NLS-1$
+		years = Messages.getString("TimeAgo.YEARS" + "_" + language); //$NON-NLS-1$
 	}
-	
-	private void initSpanish(){
-		prefixAgo = Messages.getString("TimeAgo.HACE");
-		prefixFromNow = Messages.getString("TimeAgo.PREFIJO_AHORA");
-		suffixAgo = null; //$NON-NLS-1$
-		suffixFromNow = null; //$NON-NLS-1$
-		seconds = Messages.getString("TimeAgo.SEGUNDOS"); //$NON-NLS-1$
-		minute = Messages.getString("TimeAgo.MINUTO"); //$NON-NLS-1$
-		minutes = Messages.getString("TimeAgo.MINUTOS"); //$NON-NLS-1$
-		hour = Messages.getString("TimeAgo.HORA"); //$NON-NLS-1$
-		hours = Messages.getString("TimeAgo.HORAS"); //$NON-NLS-1$
-		day = Messages.getString("TimeAgo.DIA"); //$NON-NLS-1$
-		days = Messages.getString("TimeAgo.DIAS"); //$NON-NLS-1$
-		month = Messages.getString("TimeAgo.MES"); //$NON-NLS-1$
-		months = Messages.getString("TimeAgo.MESES"); //$NON-NLS-1$
-		year = Messages.getString("TimeAgo.ANYO"); //$NON-NLS-1$
-		years = Messages.getString("TimeAgo.ANYOS"); //$NON-NLS-1$
-	}
+
 	/**
 	 * Get time until specified date
 	 *
