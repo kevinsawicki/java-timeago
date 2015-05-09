@@ -1,4 +1,3 @@
-package com.github.kevinsawicki.timeago.tests;
 /*
  * Copyright (c) 2011 Kevin Sawicki <kevinsawicki@gmail.com>
  *
@@ -20,6 +19,8 @@ package com.github.kevinsawicki.timeago.tests;
  * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
  * IN THE SOFTWARE.
  */
+package com.github.kevinsawicki.timeago.tests;
+
 import com.github.kevinsawicki.timeago.TimeAgo;
 
 import java.text.MessageFormat;
@@ -62,11 +63,6 @@ public class TimeAgoTest extends TestCase {
 	 */
 	public static final long YEAR = 365 * DAY;
 
-	/**
-	 * Locale for test
-	 */
-	private static final String locale = "it";
-
 	private long ago(long offset) {
 		return System.currentTimeMillis() - offset;
 	}
@@ -75,7 +71,7 @@ public class TimeAgoTest extends TestCase {
 	 * Test seconds ago
 	 */
 	public void testAgoSeconds() {
-		TimeAgo ago = new TimeAgo(locale);
+		TimeAgo ago = new TimeAgo();
 		String time = ago.timeAgo(System.currentTimeMillis());
 		String expected = ago.join(ago.getPrefixAgo(), ago.getSeconds(),
 				ago.getSuffixAgo());
@@ -86,7 +82,7 @@ public class TimeAgoTest extends TestCase {
 	 * Test minute ago
 	 */
 	public void testAgoMinute() {
-		TimeAgo ago = new TimeAgo(locale);
+		TimeAgo ago = new TimeAgo();
 		String time = ago.timeAgo(ago(MINUTE));
 		String expected = ago.join(ago.getPrefixAgo(), ago.getMinute(),
 				ago.getSuffixAgo());
@@ -97,7 +93,7 @@ public class TimeAgoTest extends TestCase {
 	 * Test minutes ago
 	 */
 	public void testAgoMinutes() {
-		TimeAgo ago = new TimeAgo(locale);
+		TimeAgo ago = new TimeAgo();
 		int minutes = 2;
 		String time = ago.timeAgo(ago(minutes * MINUTE));
 		String expected = ago.join(ago.getPrefixAgo(),
@@ -110,7 +106,7 @@ public class TimeAgoTest extends TestCase {
 	 * Test hour ago
 	 */
 	public void testAgoHour() {
-		TimeAgo ago = new TimeAgo(locale);
+		TimeAgo ago = new TimeAgo();
 		String time = ago.timeAgo(ago(HOUR));
 		String expected = ago.join(ago.getPrefixAgo(), ago.getHour(),
 				ago.getSuffixAgo());
@@ -121,7 +117,7 @@ public class TimeAgoTest extends TestCase {
 	 * Test hours ago
 	 */
 	public void testAgoHours() {
-		TimeAgo ago = new TimeAgo(locale);
+		TimeAgo ago = new TimeAgo();
 		long hours = 3;
 		String time = ago.timeAgo(ago(hours * HOUR));
 		String expected = ago
@@ -135,7 +131,7 @@ public class TimeAgoTest extends TestCase {
 	 * Test day ago
 	 */
 	public void testAgoDay() {
-		TimeAgo ago = new TimeAgo(locale);
+		TimeAgo ago = new TimeAgo();
 		String time = ago.timeAgo(ago(30 * HOUR));
 		String expected = ago.join(ago.getPrefixAgo(), ago.getDay(),
 				ago.getSuffixAgo());
@@ -146,7 +142,7 @@ public class TimeAgoTest extends TestCase {
 	 * Test day ago
 	 */
 	public void testAgoDays() {
-		TimeAgo ago = new TimeAgo(locale);
+		TimeAgo ago = new TimeAgo();
 		long days = 4;
 		String time = ago.timeAgo(ago(days * DAY));
 		String expected = ago.join(ago.getPrefixAgo(),
@@ -158,7 +154,7 @@ public class TimeAgoTest extends TestCase {
 	 * Test month ago
 	 */
 	public void testAgoMonth() {
-		TimeAgo ago = new TimeAgo(locale);
+		TimeAgo ago = new TimeAgo();
 		String time = ago.timeAgo(ago(35 * DAY));
 		String expected = ago.join(ago.getPrefixAgo(), ago.getMonth(),
 				ago.getSuffixAgo());
@@ -169,7 +165,7 @@ public class TimeAgoTest extends TestCase {
 	 * Test months ago
 	 */
 	public void testAgoMonths() {
-		TimeAgo ago = new TimeAgo(locale);
+		TimeAgo ago = new TimeAgo();
 		long months = 2;
 		String time = ago.timeAgo(ago(months * MONTH));
 		String expected = ago.join(ago.getPrefixAgo(),
@@ -182,7 +178,7 @@ public class TimeAgoTest extends TestCase {
 	 * Test year ago
 	 */
 	public void testYearAgo() {
-		TimeAgo ago = new TimeAgo(locale);
+		TimeAgo ago = new TimeAgo();
 		String time = ago.timeAgo(System.currentTimeMillis() - (14 * MONTH));
 		String expected = ago.join(ago.getPrefixAgo(), ago.getYear(),
 				ago.getSuffixAgo());
@@ -193,7 +189,7 @@ public class TimeAgoTest extends TestCase {
 	 * Test year ago
 	 */
 	public void testYearsAgo() {
-		TimeAgo ago = new TimeAgo(locale);
+		TimeAgo ago = new TimeAgo();
 		long years = 7;
 		String time = ago.timeAgo(System.currentTimeMillis() - (years * YEAR));
 		String expected = ago
