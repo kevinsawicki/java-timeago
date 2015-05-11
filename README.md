@@ -2,6 +2,12 @@
 
 This is a Java port of the [jquery-timeago](https://github.com/rmm5t/jquery-timeago) plug-in.  Please visit the [jquery-timeago](http://rmm5t.github.com/jquery-timeago/) project page to read more about fuzzy timestamps.
 
+This library is forked from Kevin Sawicki's 'java-timeago' to support more than only one language. Feel free to fork it and add your own! 
+
+####Currently in work
+>Deutsch
+>French
+
 It supports English, Spanish and Italian at the time.
 
 ##Importing the library
