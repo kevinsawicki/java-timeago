@@ -7,14 +7,14 @@ This library is forked from Kevin Sawicki's 'java-timeago' to support more than 
 
 ##Importing into your project
 ###Maven
-1. Add the repository
+* Add the repository
 ```xml
 <repository>
 	    <id>jitpack.io</id>
 	    <url>https://jitpack.io</url>
 </repository>
 ```
-2. Add the dependency
+* Add the dependency
 ```xml
 <dependency>
 	    <groupId>com.github.Kinnonii</groupId>
