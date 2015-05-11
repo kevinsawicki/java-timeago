@@ -5,8 +5,8 @@ This is a Java port of the [jquery-timeago](https://github.com/rmm5t/jquery-time
 This library is forked from Kevin Sawicki's 'java-timeago' to support more than only one language. Feel free to fork it and add your own! 
 
 ####Currently in work
->Deutsch
->French
+*Deutsch
+*French
 
 It supports English, Spanish and Italian at the time.
 
