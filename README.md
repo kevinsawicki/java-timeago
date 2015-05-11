@@ -4,14 +4,76 @@ This is a Java port of the [jquery-timeago](https://github.com/rmm5t/jquery-time
 
 This library is forked from Kevin Sawicki's 'java-timeago' to support more than only one language. Feel free to fork it and add your own! 
 
-####Currently in work
+
+##Importing into your project
+###Maven
+1. Add the repository
+```xml
+<repository>
+	    <id>jitpack.io</id>
+	    <url>https://jitpack.io</url>
+</repository>
+```
+2. Add the dependency
+```xml
+<dependency>
+	    <groupId>com.github.Kinnonii</groupId>
+	    <artifactId>java-timeago</artifactId>
+	    <version>timeago-1.1.3</version>
+</dependency>
+```
+###Gradle
+1. Add this to your build file (your app's module build.gradle if you're integrating it in Android with Android Studio)
+```
+repositories {
+	    maven {
+	        url "https://jitpack.io"
+	    }
+}
+dependencies {
+	        compile 'com.github.Kinnonii:java-timeago:timeago-1.1.3'
+}
+```
+
+>If you're using Android Studio, the build.gradle file would be like this:
+```
+android {
+    compileSdkVersion 22
+    buildToolsVersion "21.1.2"
+    defaultConfig {
+        applicationId "com.example.app"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 1
+        versionName "0.1"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+}
+repositories {
+    maven {
+        url "https://jitpack.io"
+    }
+    //Other repositories... p.e. mavenCentral()
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.github.Kinnonii:java-timeago:1.1.2'
+    //Other libraries...
+}
+```
+
+##Currently in work
 * Deutsch
 * French
 
 It supports English, Spanish and Italian at the time.
-
-##Importing the library
-Use Jitpack.io ([check here](https://jitpack.io/#Kinnonii/java-timeago/timeago-1.1.3))
 
 ##Usage
 
